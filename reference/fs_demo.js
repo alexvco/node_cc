@@ -101,9 +101,17 @@ fs.mkdir(path.join(__dirname, "/data"), {}, err => {
 // NOTE : myFolderToDelete must be an empty folder.
 fs.rmdir(path.join(__dirname, "/myFolderToDelete"), (err) => {
   if (err) throw err;
-
+  // if no error, folder has been deleted successfully
   console.log("Folder deleted ...");
 });
+
+
+// delete file named 'sample.txt'
+fs.unlink('sample.txt', (err) => {
+    if (err) throw err;
+    // if no error, file has been deleted successfully
+    console.log('File deleted!');
+}); 
 
 
 // Read the contents of a folder

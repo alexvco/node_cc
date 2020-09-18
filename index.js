@@ -58,7 +58,7 @@ const server = http.createServer((req, res) => {
   // Check if contentType is text/html but no .html file extension
   if (contentType == "text/html" && extname == "") filePath += ".html";
 
-  // log the filePath
+  // log the filePath (defined above ~ aka the request)
   console.log(filePath);
 
   // Read File

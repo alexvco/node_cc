@@ -1,6 +1,5 @@
 # Node Crash Course Files
 
-> These files go with the Node crash course on YouTube.
 
 ## Quick Start
 
@@ -11,3 +10,9 @@ npm install
 # Serve on localhost:5000
 npm start
 ```
+
+to run in dev using nodemon: npm run dev
+
+to run some other file, you can use: node reference/path_demo.js
+
+see package.json for more details
